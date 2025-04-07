@@ -1,0 +1,18 @@
+
+### Final Model Summary
+- Model: CRNN with CTC loss
+- Input Shape: (128, 512, 1)
+- Layers: Conv2D + BiLSTM + Dense
+- Total Parameters: ~2.1M
+- Final Accuracy: Model successfully trained with synthetic data for Spanish OCR.
+
+### Observations:
+- CNN layers extract spatial features from document images.
+- Bidirectional LSTMs learn temporal dependencies across text lines.
+- CTC loss aligns predicted sequences with actual characters.
+
+### Future Improvements:
+- Train with real annotated historical data
+- Add data augmentation and normalization
+- Explore Transformer-based OCR models
+
